@@ -1,0 +1,1 @@
+﻿1. Dodac typ dla macierzy 3x3 i 4x4
