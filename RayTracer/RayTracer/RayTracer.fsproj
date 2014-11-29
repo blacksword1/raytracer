@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>918ae071-4867-453a-bffe-8f8e1c5a34c3</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>RayTracer</RootNamespace>
     <AssemblyName>RayTracer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -49,10 +49,18 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Content Include="Todo.txt" />
     <None Include="Script.fsx" />
     <Compile Include="rgb.fs" />
     <Compile Include="image.fs" />
+    <Compile Include="angles.fs" />
     <Compile Include="vectors.fs" />
+    <Compile Include="points.fs" />
+    <Compile Include="onb.fs" />
+    <Compile Include="types.fs" />
+    <Compile Include="shapes.fs" />
+    <Compile Include="raycaster.fs" />
+    <Compile Include="main.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
