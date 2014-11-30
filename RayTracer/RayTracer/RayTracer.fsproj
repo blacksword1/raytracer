@@ -57,6 +57,7 @@
     <Compile Include="vectors.fs" />
     <Compile Include="points.fs" />
     <Compile Include="onb.fs" />
+    <Compile Include="sampling.fs" />
     <Compile Include="types.fs" />
     <Compile Include="shapes.fs" />
     <Compile Include="raycaster.fs" />

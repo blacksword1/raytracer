@@ -9,7 +9,7 @@ module RayCaster =
     
     type RayCaster() = 
         
-        let castray (scene : IShape[]) (i : int) (j : int) (ray : Ray) = 
+        let castray (scene : IShape[]) (ray : Ray) = 
             let hits = 
                 scene
                 |> Array.map (fun shape -> shape.Hit(ray, 0.00001, 100000.0)) 
@@ -20,6 +20,6 @@ module RayCaster =
                 then None
                 else Some <| Array.minBy (fun hit -> hit.t) hits
 
-        member this.CastRay(scene : IShape[], i : int, j : int, ray : Ray) = castray scene i j ray
+        member this.CastRay(scene : IShape[], ray : Ray) = castray scene ray
     
 
